@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Dropdown List</title>
+<style>
+body { margin: 0; font: 14px/1.4 "Microsoft YaHei"; background-color: #EDEFF0; }
+
+.course-sidebar { width: 262px; margin:20px;}
+.course-sidebar > div { border: 1px solid #e6e8e9; box-shadow: 0px 1px 2px #d5d7d8; background-color: #fff; }
+.course-sidebar-type { height: 380px; }
+.course-sidebar-search {overflow: hidden; }
+.course-search-input { width: 200px; line-height: 18px; padding: 10px; margin: 0; border: 0 none; font-size: 12px; font-family: inherit; float: left; cursor:default;}
+.course-sidebar-search.focus { border-color: #2ea7e0; }
+.course-search-input:focus { outline: 0 none; }
+.course-search-input::-ms-clear { display: none; }
+.course-search-btn { width: 38px; height: 38px; float: right; background: url(http://img.mukewang.com/545305ba0001f3f600380076.png); text-indent: -9em; overflow: hidden; cursor:default;}
+.focus .course-search-btn { background-position: 0 -38px; }
+
+.course-sidebar-result { display: none; position: absolute; width: 260px; margin: 0; padding-left: 0; list-style-type: none; border: 1px solid #e6e8e9; background-color: #fff; box-shadow: 0px 1px 2px #d5d7d8; font-size: 12px; }
+.course-sidebar-result a { display: block; color: #5e5e5e; line-height: 30px; padding-left: 12px; text-decoration: none; cursor:default; }
+.course-sidebar-result a:hover,.course-sidebar-result a:focus { color: #000; background-color: #f9f9f9; }
+</style>
+<script type="text/javascript" src="jquery.min.js"></script>
+<!-- <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="jquery.min.js" type="text/javascript"><\/script>')</script> -->
+</head>
+
+<body>
+
+    <div id="dropdownlist" class="course-sidebar">
+        <div class="course-sidebar-search">
+        	<input class="course-search-input" placeholder="课程搜索">
+            <a href="javascript:" class="course-search-btn">搜索</a>
+        </div>
+		<ul class="course-sidebar-result">
+            <li><a href="javascript:void(0);" value="item1">分享：CSS深入理解之float浮动</a></li>
+            <li><a href="javascript:void(0);" value="item2">案例：CSS圆角进化论</a></li>
+            <li><a href="javascript:void(0);" value="item3">案例：CSS Sprite雪碧图应用</a></li>
+            <li><a href="javascript:void(0);" value="item4">案例：CSS3 3D 特效</a></li>
+            <li><a href="javascript:void(0);" value="item5">案例：如何用CSS进行网页布局</a></li>
+        </ul>
+    </div>
+	
+	<div id="dropdownlist1" class="course-sidebar">
+        <div class="course-sidebar-search">
+        	<input class="course-search-input" placeholder="课程搜索">
+            <a href="javascript:" class="course-search-btn">搜索</a>
+        </div>
+		<ul class="course-sidebar-result">
+            <li><a href="javascript:void(0);">分享：CSS深入理解之float浮动</a></li>
+            <li><a href="javascript:void(0);">案例：CSS圆角进化论</a></li>
+            <li><a href="javascript:void(0);">案例：CSS Sprite雪碧图应用</a></li>
+            <li><a href="javascript:void(0);">案例：CSS3 3D 特效</a></li>
+            <li><a href="javascript:void(0);">案例：如何用CSS进行网页布局</a></li>
+        </ul>
+    </div>
+	<div id="log" style="float:right; color:red"></div>
+
+<script>
+(function() {
+	var $dropdownlist = $("#dropdownlist");
+	var $dropdownInput = $dropdownlist.find(".course-search-input");
+	var $result = $dropdownlist.find(".course-sidebar-result");
+	
+	var isFocusExpand = true;
+
+	$dropdownlist.on({
+		click: triggerResultList,
+		focus:function(){
+			if(isFocusExpand){
+				triggerResultList();
+				var defaultItem = $dropdownlist.find(".course-sidebar-result a:first");	
+				if(defaultItem.length){
+					defaultItem.focus();
+				}
+			}
+		},
+		focusout:triggerResultList,
+		keyup:function(e){
+			//38上，40下
+			var inputs = $dropdownlist.children(".course-sidebar-result").find("a,input");
+			var tabidx = inputs.index(this);
+			if(e.which === 38){
+				if(tabidx-1 > -1){
+					inputs[tabidx-1].focus();
+					var text = $(inputs[tabidx-1]).text();
+					$dropdownInput.val(text);
+				}
+			}
+			else if(e.which === 40){
+				if(tabidx+1 < inputs.length){
+					inputs[tabidx+1].focus();
+					var text = $(inputs[tabidx+1]).text();
+					$dropdownInput.val(text);
+				}
+			}
+		}
+	}, ".course-search-btn, .course-search-input");
+	
+	$dropdownlist.on({
+		//click: expandResultList,
+	
+		focusout:triggerResultList,
+		keyup:function(e){
+			//38上，40下
+			var inputs = $dropdownlist.children(".course-sidebar-result").find("a,input");
+			var tabidx = inputs.index(this);
+			if(e.which === 38){
+				if(tabidx-1 > -1){
+					inputs[tabidx-1].focus();
+				}
+			}
+			else if(e.which === 40){
+				if(tabidx+1 < inputs.length){
+					inputs[tabidx+1].focus();
+				}
+			}
+		}
+	}, ".course-sidebar-result a");
+
+	
+	$dropdownlist.on({
+		click: selectResultItem
+	},".course-sidebar-result a");
+	
+	function triggerResultList(){
+		if($result.length){
+			$("#log").html($dropdownlist.find("input,a").is(":focus")+"A");
+			if($dropdownlist.find("input,a").is(":focus")){
+				$result.show();
+			}else{
+				$result.hide();
+			}
+			
+		}	
+	}
+	
+	function collapseResultList(){
+		if($result.length){
+			$result.hide();
+		}	
+	}
+	
+	function selectResultItem(){
+		var $this = $(this);
+		var value = $this.attr("value");
+		var text = $this.text();
+		$dropdownInput.val(text);
+		var inputs = $(document).find("a,input");
+		var tabidx = inputs.index(this);
+		$result.hide();
+		for(var i=tabidx; i<inputs.length-1; i++){
+			if(!$(inputs[i+1]).is(":hidden")){
+				inputs[i+1].focus();
+				break;
+			}
+		}
+	}
+
+
+})(jQuery);
+</script>
+</body>
+</html>

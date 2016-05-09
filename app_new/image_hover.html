@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="css/style_portfolio.css" type="text/css" rel="stylesheet" />
+    <link href="css/prettyPhoto.css" type="text/css" rel="stylesheet" />
+    <style type="text/css">
+
+.con{width:950px;height:435px;background:#fff;margin:27px auto;padding-left:25px;padding-top:25px;}
+
+.con ul li{width:297px;height:198px;float:left;margin-right:15px;margin-bottom:15px;position:relative;overflow:hidden;cursor:pointer;}
+
+.txt{width:297px;height:45px;background:rgba(0,0,0,0.6);/*透明背景色，不透明其文字内容,IE9、标准浏览器、IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂*/position:absolute;left:0;bottom:0;color:#fff;font-family:"微软雅黑";}
+
+.txt h3{font-size:20px;font-weight:100;height:45px;text-align:center;line-height:45px; margin: 0}
+
+.txt p{font-size:14px;text-align:center;}
+
+@media \0screen\,screen\9 {/* 只支持IE6、7、8 */
+  .txt div{
+    background-color:#000000;
+    filter:Alpha(opacity=60);
+    position:static;  /*IE6、7、8只能设置position:static(默认属性) ，否则会导致子元素继承Alpha值 */
+    *zoom:1; /* 激活IE6、7的haslayout属性，让它读懂Alpha */
+  }
+
+  .txt p, .txt h3{
+    position: relative;/* 设置子元素为相对定位，可让子元素不继承Alpha值 */
+   
+  }  
+}
+
+</style>
+
+</head>
+<body>
+    <div class="con">
+
+        <ul>
+
+            <li>
+
+                <img src="http://www.jq22.com/demo/hover-150626234706/images/class1.jpg">
+
+                <div class="txt" style="height: 45px; overflow: hidden;">
+                  <div>
+                    <h3 style="padding-top: 0px;">IT培训</h3>
+
+                    <p>为您铺就成为IT大神的在线学习之路</p>
+                  </div>
+                </div>
+
+            </li>
+
+            
+        </ul>
+
+    </div>
+   
+   <!-- // Wrapper -->
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <!-- Portfolio and Hover Image adipoli Script -->
+
+    <script type="text/javascript">
+        $(".con ul li").hover(function(){
+         $(this).find(".txt").stop().animate({height:"198px"},400);
+         $(this).find(".txt h3").stop().animate({paddingTop:"60px"},400);
+     },function(){
+        $(this).find(".txt").stop().animate({height:"45px"},400);
+        $(this).find(".txt h3").stop().animate({paddingTop:"0px"},400);
+    });
+
+    </script>
+    
+</body>
+</html>

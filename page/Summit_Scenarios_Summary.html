@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+
+    .main{
+    	width:916px; height: 500px; background: red;
+    	margin: 50px auto;
+    }
+
+    .main .left-item, .main .right-item{
+    	width: 45%;
+    	height: 200px;
+    }
+
+    .left-item{
+    	background: blue;
+    	margin: 0 auto;
+    }
+
+    .right-item{
+    	background: green;
+    }
+
+    .fl{float: left;}
+    .fr{float: right;}
+
+    .hide{display: none}
+    </style>
+    <script src="js/jquery-1.7.2.min.js"></script>
+</head>
+<body>
+	<div class="main">
+		<div class="left-item"></div>	
+	</div>
+	<input type="button" value="Click" />
+
+	<script type="text/javascript">
+		var images = [
+			{"name":"img1", "url":"images/about1.jpg", "title":"image 1", "alt": "image 1"},
+			{"name":"img2", "url":"images/about2.jpg", "title":"image 2", "alt": "image 2"},
+			{"name":"img3", "url":"images/about3.jpg", "title":"image 3", "alt": "image 3"},
+			{"name":"img4", "url":"images/about4.jpg", "title":"image 4", "alt": "image 4"},
+		]; 
+		$(function(){
+			var imageMain = '<div class="right-item hide fr"></div>';
+			var $main = $(".main");
+			$main.children(".left-item").on({
+				click:function(){
+					var $leftItem = $(".main .left-item");
+					var imageTheme = '<img class="image" src="{src}" alt="{alt}", title="{title}" />'
+					$leftItem.animate({"margin-left":0},1000,function(){
+						$(this).addClass("fl");
+						$main.append(imageMain);
+						$rightItem = $main.find(".right-item");
+						var img = $.grep(images, function(item,i){
+							return item.name === "img1"; 
+						});
+						if(img.length === 1){
+							var imgHtml = imageTheme.replace(/{src}/g, img[0].url)
+							                    .replace(/{title}/g, img[0].title)
+							                    .replace(/{alt}/g, img[0].alt);
+							$rightItem.html(imgHtml);
+							$rightItem.fadeIn(300);
+						}
+						
+					})
+
+					
+				}
+			});
+		});
+	</script>
+</body>
+</html>

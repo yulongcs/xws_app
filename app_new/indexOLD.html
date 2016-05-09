@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>单页视觉差滚屏</title>
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style_portfolio.css" type="text/css" rel="stylesheet" />
+    <link href="css/prettyPhoto.css" type="text/css" rel="stylesheet" />
+
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div id="main" class="main">
+        <div id="loading" class="loading">
+            <div></div>
+            <div></div>
+            <span>
+				<img src="images/loading_run.gif" alt="loading">
+			</span>
+			
+        </div>
+        <div id="header" class="header">
+            <div class="headerMain">
+                <a href="#" class="logo">
+                    <img src="images/logo.png">
+                </a>
+                <div id="music" class="music">
+                    <audio id="audio1" src="images/audio.mp3" preload="auto" loop></audio>
+                </div>
+                <ul id="nav" class="nav">
+                    <li>
+                        <a href="javascript:;">
+                            <div class="up"><img src="images/home_gruen.png"></div>
+                            <div><img src="images/home.png"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <div class="up">舞社简介</div>
+                            <div>舞社简介</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <div class="up">关于我们</div>
+                            <div>关于我们</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <div class="up">作品展示</div>
+                            <div>作评展示</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <div class="up">师资团队</div>
+                            <div>师资团队</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <div class="up">联系我们</div>
+                            <div>联系我们</div>
+                        </a>
+                    </li>
+                </ul>
+                <div id="arrow" class="arrow"></div>
+            </div>
+        </div>
+        <div id="content" class="content">
+            <ul id="menu" class="menu">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul id="list" class="list">
+                <li id="home" class="liList home">
+                    <div id="homeContent" class="divList">
+                        <ul class="homeContent1">
+                            <!--<li class="active">
+                                <h1 class="commonTitle">one layer</h1>
+                            </li>
+                            <li>
+                                <h1 class="commonTitle">two layer</h1>
+                            </li>
+                            <li>
+                                <h1 class="commonTitle">three layer</h1>
+                            </li>-->
+                        </ul>
+                        <ul class="homeContent2">
+                            <!--<li class="active"></li>
+                            <li></li>
+                            <li></li>-->
+                        </ul>
+                    </div>
+                </li>
+                <li id="course" class="liList course">
+                    <div id="courseContent" class="divList">
+                        <div class="courseContent1">
+                            <h1 class="commonTitle">
+                                舞社简介
+                            </h1>
+                        </div>
+                        <div class="courseContent2">
+                            <p class="commonText">
+                                无锡舞蹈培训机构-lovedance星舞社是专业无锡舞蹈培训机构。
+                                成立于2005年。2007年进驻无锡，是无锡现在最正规、专业的时尚舞社，亦是中国国际标准舞竞技舞蹈联合总会无锡指定的唯一一家国标舞培训、考核机构。 我们拥有全国顶尖国标专业舞者多名，现在已陆续在锡任教，经过两年的发展，星舞社在无锡拥有了良好的口碑市场和业内影响，培训学员超过千余人。
+                            </p>
+                            <p class="commonText">
+                                权威、专业的师资力量为星舞社赢得了良好的社会声誉，作为《东方卫视》知名栏目《舞林大会》的专业指导，在短时间内为宋晓波、方也、吉雪萍、倪虹 洁等多位演绎明星进行专业培训，其中著名节目主持人方也获得了舞林大会的冠军。 星舞社还参加了无锡众多公司晚会的舞蹈编排，取得强烈反响，并成为一些企业单位的定点舞蹈培训机构，许多企业白领和时尚人士更是慕名前来。
+                            </p>
+                            <p class="commonText">
+                                目前，Lovedance星舞社开设有了拉丁、爵士、肚皮、SASAL、摩登、形体芭蕾等课程。系统的课程，专业的师资，为怀抱不同舞蹈梦想的人士提供针对性的专业培训。 Lovedance星舞社将帮助您早日实现舞蹈的梦想，让您的人生舞动激情，舞动奇迹！
+                            </p>
+                        </div>
+                        <div class="courseContent3">
+                            <!-- <div class="courseLine"></div>
+                            <div class="courseLine" style="left:120px;"></div>
+                            <div class="courseLine" style="left:240px;"></div>
+                            <div class="courseLine" style="left:360px;"></div>
+                            <div class="courseLine" style="left:480px;"></div>
+                            <div class="courseLogo">
+                                <div class="courseBefore" style="background-image:url(images/course/ws1.jpg);"></div>
+                                <div class="courseAfter">舞社大教室</div>
+                            </div>
+                            <div class="courseLogo">
+                                <div class="courseBefore" style="background-image:url(images/course/ws2.jpg);"></div>
+                                <div class="courseAfter">舞社休息区</div>
+                            </div>
+                            <div class="courseLogo">
+                                <div class="courseBefore" style="background-image:url(images/course/ws3.jpg);"></div>
+                                <div class="courseAfter">灯光下的教室</div>
+                            </div>
+                            <div class="courseLogo">
+                                <div class="courseBefore" style="background-image:url(images/course/ws4.jpg);"></div>
+                                <div class="courseAfter">舞社大教室</div>
+                            </div>
+                            <div class="courseLogo">
+                                <div class="courseBefore" style="background-image:url(images/course/ws5.jpg);"></div>
+                                <div class="courseAfter">少儿舞蹈教室</div>
+                            </div>
+                            <div class="courseLogo">
+                                <div class="courseBefore" style="background-image:url(images/binoli.png);"></div>
+                                <div class="courseAfter">测试文字1</div>
+                            </div>
+                            <div class="courseLogo">
+                                <div class="courseBefore" style="background-image:url(images/binoli.png);"></div>
+                                <div class="courseAfter">测试文字1</div>
+                            </div>
+                            <div class="courseLogo">
+                                <div class="courseBefore" style="background-image:url(images/binoli.png);"></div>
+                                <div class="courseAfter">测试文字1</div>
+                            </div>
+                            <div class="courseLogo">
+                                <div class="courseBefore" style="background-image:url(images/binoli.png);"></div>
+                                <div class="courseAfter">测试文字1</div>
+                            </div>
+                            <div class="courseLogo">
+                                <div class="courseBefore" style="background-image:url(images/binoli.png);"></div>
+                                <div class="courseAfter">测试文字1</div>
+                            </div>
+                            <div class="courseLogo">
+                                <div class="courseBefore" style="background-image:url(images/binoli.png);"></div>
+                                <div class="courseAfter">测试文字1</div>
+                            </div>
+                            <div class="courseLogo">
+                                <div class="courseBefore" style="background-image:url(images/binoli.png);"></div>
+                                <div class="courseAfter">测试文字1</div>
+                            </div> -->
+                        </div>
+                        <div class="plane1"></div>
+                        <div class="plane2"></div>
+                        <div class="plane3"></div>
+                    </div>
+                </li>
+                <li id="works" class="liList works">
+                    <div id="worksContent" class="divList">
+                        <div class="worksContent1">
+                            <h1 class="commonTitle">
+                                关于我们
+                            </h1>
+                        </div>
+                        <div class="worksContent2">
+                            <div class="worksImgParent">
+                                <img class="worksImg" src="images/worksimg1.jpg">
+                                <div class="worksImgMark">
+                                    <span>测试文字，哈哈哈啊司法所地方测试文字，哈哈哈啊司法所地方</span>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div class="worksImgParent">
+                                <img class="worksImg" src="images/worksimg2.jpg">
+                                <div class="worksImgMark">
+                                    <span>测试文字，哈哈哈啊司法所地方</span>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div class="worksImgParent">
+                                <img class="worksImg" src="images/worksimg3.jpg">
+                                <div class="worksImgMark">
+                                    <span>测试文字，哈哈哈啊司法所地方</span>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div class="worksImgParent">
+                                <img class="worksImg" src="images/worksimg4.jpg">
+                                <div class="worksImgMark">
+                                    <span>测试文字，哈哈哈啊司法所地方</span>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="worksContent3"></div>
+                        <div class="pencel1"></div>
+                        <div class="pencel2"></div>
+                        <div class="pencel3"></div>
+                    </div>
+                </li>
+                <li id="about" class="liList about">
+                    <div id="aboutContent" class="divList">
+                        <div class="aboutContent1">
+                            <h1 class="commonTitle">
+                                作品展示
+                            </h1>
+                        </div>
+                        <div class="aboutContent2">
+                            <ul id="portfolio_filter">
+        <li>
+            <a href="#" class="current" data-filter="*">全部</a>
+        </li>
+        <li>
+            <a href="#" data-filter=".latin">拉丁</a>
+        </li>
+        <li>
+            <a href="#" data-filter=".jazz">爵士</a>
+        </li>
+        <li>
+            <a href="#" data-filter=".children">少儿</a>
+        </li>
+        <li>
+            <a href="#" data-filter=".video">视频</a>
+        </li>
+    </ul>
+    <ul id="portfolio_list">
+        <!-- Portfolio Item1 starts -->
+        <li class="video jazz">
+            <div class="view view-eighth">
+                <a href="images/assets/big/img11.jpg"
+                   title="成人爵士一无锡星舞社" class="viewDetail lightbox">
+                    <div class="clr">
+                        <div class="img11"></div>
+                        <!--<div class="mask">
+                            <h2>成人爵士</h2>
+                            <p>无锡星舞社</p>
+                        </div>-->
+                    </div>
+                </a>
+            </div>
+        </li>
+        <!-- // Portfolio Item1 end-->
+        <!-- Portfolio Item1 starts -->
+        <li class="video jazz">
+            <div class="view view-eighth">
+            <a href="video/TmXB.mp4"
+                   title="成人爵士一无锡星舞社" class="viewDetail lightbox">
+               <!--  <a href="http://player.youku.com/player.php/sid/XNjg3OTM0NzEy/v.swf?VideoIDS=XNjg3OTM0NzEy&amp;winType=adshow&amp;isAutoPlay=true"
+                   title="成人爵士一无锡星舞社" class="viewDetail lightbox"> -->
+                    <div class="clr">
+                        <div class="img1"></div>
+                        <!--<div class="mask">
+                            <h2>成人爵士</h2>
+                            <p>无锡星舞社</p>
+                        </div>-->
+                    </div>
+                </a>
+            </div>
+        </li>
+        <!-- // Portfolio Item1 end-->
+        <!-- Portfolio Item2 starts -->
+        <li class="video Jazz">
+            <div class="view view-eighth">
+                <a href="http://player.youku.com/player.php/sid/XNjk3Nzk1NjY4/v.swf?VideoIDS=XNjk3Nzk1NjY4&amp;winType=adshow&amp;isAutoPlay=true"
+                   title="优雅爵士舞,我的歌声里 ——无锡星舞社" class="viewDetail lightbox">
+                    <div class="clr">
+                        <div class="img2"></div>
+                        <div class="mask">
+                            <h2>优雅爵士舞</h2>
+                            <p>无锡星舞社</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <!-- // Portfolio Item2 -->
+        <!-- Portfolio Item2 starts -->
+        <li class=" video children jazz">
+            <div class="view view-eighth">
+                <a href="http://player.youku.com/player.php/sid/XNzI0NTcwNTU2/v.swf?VideoIDS=XNzI0NTcwNTU2&amp;winType=adshow&amp;isAutoPlay=true"
+                   title="2014舞动无锡季万达杯 少儿街舞——无锡星舞社" class="viewDetail lightbox" re>
+                    <div class="clr">
+                        <div class="img3"></div>
+                        <div class="mask">
+                            <h2>舞动无锡季万达杯</h2>
+                            <p>无锡星舞社</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <!-- // Portfolio Item3 -->
+        <!-- Portfolio Item4 starts -->
+        <li class="jazz video">
+            <div class="view view-eighth">
+                <a href="http://player.youku.com/player.php/sid/XOTE3NDQxODg4/v.swf?VideoIDS=XOTE3NDQxODg4" title="无锡星舞社少儿街舞大东方演出"
+                   class="viewDetail lightbox">
+                    <div class="clr">
+                        <div class="img4"></div>
+                        <div class="mask">
+                            <h2>无锡星舞社少儿街舞大东方演出</h2>
+                            <p>无锡星舞社</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <!-- // Portfolio Item4 -->
+        <!-- Portfolio Item5 starts -->
+        <li class="children video latin">
+            <div class="view view-eighth">
+                <a href="http://player.youku.com/player.php/sid/XNjgyNzQ5OTg0/v.swf?VideoIDS=XNjgyNzQ5OTg0&amp;winType=adshow&amp;isAutoPlay=true"
+                   title="少儿拉丁教学伦巴舞" class="viewDetail lightbox">
+                    <div class="clr">
+                        <div class="img5"></div>
+                        <div class="mask">
+                            <h2>少儿拉丁教学伦巴舞</h2>
+                            <p>无锡星舞社</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <!-- // Portfolio Item5 -->
+        <!-- Portfolio Item6 starts -->
+        <li class="latin video children">
+            <div class="view view-eighth">
+                <a href="http://player.youku.com/player.php/sid/XNjQ2MTkwNDM2/v.swf?VideoIDS=XNjgyNzQ5OTg0&amp;winType=adshow&amp;isAutoPlay=true"
+                   title="无锡音乐节少儿拉丁舞演出——无锡星舞社" class="viewDetail lightbox">
+                    <div class="clr">
+                        <div class="img6"></div>
+                        <div class="mask">
+                            <h2>无锡音乐节少儿拉丁舞演出</h2>
+                            <p>无锡星舞社</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <!-- // Portfolio Item6 -->
+        <!-- Portfolio Item7 starts -->
+        <li class="children video latin">
+            <div class="view view-eighth">
+                <a href="http://player.youku.com/player.php/sid/XNjEzNTM2Mjgw/v.swf?VideoIDS=XNjEzNTM2Mjgw&amp;winType=adshow&amp;isAutoPlay=true"
+                   title="无锡K歌大赛演出少儿拉丁——无锡星舞社" class="viewDetail lightbox">
+                    <div class="clr">
+                        <div class="img7"></div>
+                        <div class="mask">
+                            <h2>少儿拉丁表演</h2>
+                            <p>无锡星舞社</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <!-- // Portfolio Item7 -->
+    </ul>
+                        </div>
+                        <div class="aboutContent3">
+                           <!--  <div class="aboutImg">
+                                <ul data-src="images/about1.jpg"></ul>
+                                <span style="background:url(images/about2.jpg) no-repeat;"></span>
+                            </div>
+                            <div class="aboutImg">
+                                <ul data-src="images/about3.jpg"></ul>
+                                <span style="background:url(images/about4.jpg) no-repeat;"></span>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="blueLine"></div>
+                </li>
+                <li id="team" class="liList team">
+                    <div id="teamContent" class="divList">
+                        <div class="teamContent1">
+                            <h1 class="commonTitle">
+                                师资团队
+                            </h1>
+                        </div>
+                        <div class="teamContent2">
+                            <p class="commonText">
+                                Wir sind seit 2002 eine Full-Service-Werbeagentur mit Stammsitz in Heimsheim, zwischen Stuttgart und Karlsruhe.
+                                <br>
+                                Über 60 Jahre Erfahrung vereinen das gesamte VoxelAir-Team. Dabei hat jedes Voxel neben professionellem Allroundwissen auch sein ganz spezielles Gebiet, um selbst die individuellsten Kundenwünsche schnell und kompetent umzusetzen.
+                            </p>
+                        </div>
+                        <div class="teamContent3"></div>
+                    </div>
+                </li>
+                <li id="contact" class="liList contact">
+                    <div id="contactContent" class="divList">
+                        <div class="contactContent1">
+                            <h1 class="commonTitle">
+                                联系我们
+                            </h1>
+                        </div>
+                        <div class="contactContent2">
+                            <p class="commonText">
+                                Wir sind seit 2002 eine Full-Service-Werbeagentur mit Stammsitz in Heimsheim, zwischen Stuttgart und Karlsruhe.
+                                <br>
+                                Über 60 Jahre Erfahrung vereinen das gesamte VoxelAir-Team. Dabei hat jedes Voxel neben professionellem Allroundwissen auch sein ganz spezielles Gebiet, um selbst die individuellsten Kundenwünsche schnell und kompetent umzusetzen.
+                            </p>
+                        </div>
+                        <div class="contactContent3"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>
