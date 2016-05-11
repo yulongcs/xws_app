@@ -97,10 +97,10 @@ function pageLoad() {
     });
     for (var i = 0; i < $(".video .swiper-slide").size(); i++) $(".video .guide").append('<a></a>');
     $(".video .guide a").eq(0).addClass("active");
-    $(".video .nth1, .video .nth2").append('<div class="shade"></div><div class="line"><u></u></div>');
+    //$(".video .nth1, .video .nth2").append('<div class="shade"></div><div class="line"><u></u></div>');
     videoSwiper = new Swiper(".video .swiper-container", {
         loop: true,
-        autoplay: 5000,
+        //autoplay: 5000,
         grabCursor: true,
         onSlideChangeStart: function() {
             resetVideoSwiperAnimation()
@@ -108,7 +108,6 @@ function pageLoad() {
         onSlideChangeEnd: function(e) {
             var activeGuid = e.isEnd?0:e.activeIndex-1;
             $(".video .guide a").removeClass("active").eq(activeGuid).addClass("active"); 
-            var index = $('.video .swiper-container').find('.swiper-slide-active').attr('data-swiper-slide-index')
             videoSwiperAnimation(e)
         },
         onTouchEnd: function() {
