@@ -565,12 +565,14 @@ section {
 .video .swiper-container .nth3 {
     background: url(../Images/wallpaper1_3.jpg) 50% center;
     -moz-background-size: cover;
-    background-size: cover
+    background-size: cover;
+    background-position: top; 
 }
 
 .video .swiper-container .nth3 .box {
     position: relative;
-    width: 100%
+    width: 100%;
+    text-align: center;
 }
 
 .video .swiper-container .nth3 .box .top {
@@ -594,12 +596,12 @@ section {
 }
 
 .video .swiper-container .nth3 .box .mid {
-    width: 358px;
-    height: 66px;
+    font-size: 24px;
+    color: #ffffff;
+    display: inline-block;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 10px;
-    background: url(../Images/words.png) no-repeat 0px -219px;
     -moz-opacity: 0;
     opacity: 0;
     -webkit-transition: all .3s ease-in-out 0s;
@@ -643,7 +645,8 @@ section {
 
 .video .swiper-container .nth4 .box {
     position: relative;
-    width: 100%
+    width: 100%;
+    text-align: center;
 }
 
 .video .swiper-container .nth4 .box .top {
@@ -679,6 +682,27 @@ section {
     margin: 0 auto;
     margin-top: 15px;
     background: url(../Images/words.png) no-repeat 0px -147px
+}
+
+.video .swiper-container .nth4 .box .mid {
+    font-size: 28px;
+    color: #ffffff;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    -moz-opacity: 0;
+    opacity: 0;
+    -webkit-transition: all .3s ease-in-out 0s;
+    -moz-transition: all .3s ease-in-out 0s;
+    -ms-transition: all .3s ease-in-out 0s;
+    -o-transition: all .3s ease-in-out 0s;
+    transition: all .3s ease-in-out 0s
+}
+
+.video .swiper-container .nth4.active .box .mid {
+    -moz-opacity: 1;
+    opacity: 1
 }
 
 .video .swiper-container .nth4 .box .bottom {
@@ -853,7 +877,12 @@ section.business {
     height: 300px;
     margin: 0 8px;
     background: url(../Images/bg_green.png) no-repeat 0px 400px;
-    overflow: hidden
+    overflow: hidden;
+    -webkit-transition: all .5s ease-in-out 0s;
+    -moz-transition: all .5s ease-in-out 0s;
+    -ms-transition: all .5s ease-in-out 0s;
+    -o-transition: all .5s ease-in-out 0s;
+    transition: all .5s ease-in-out 0s;
 }
 
 .business .box ul.items li i {
@@ -924,7 +953,12 @@ section.business {
     margin-top: 70px;
     font-size: 16px;
     font-weight: normal;
-    text-align: center
+    text-align: center;
+    -webkit-transition: all .3s ease-in-out .2s;
+    -moz-transition: all .3s ease-in-out .2s;
+    -ms-transition: all .3s ease-in-out .2s;
+    -o-transition: all .3s ease-in-out .2s;
+    transition: all .3s ease-in-out .2s
 }
 
 .business .box ul.items li p {
@@ -934,7 +968,7 @@ section.business {
     font-family: Arial, "宋体";
     font-size: 12px;
     line-height: 20px;
-    text-align: center
+    padding: 0 20px;
 }
 
 .business .box ul.items li:hover {
@@ -983,16 +1017,17 @@ section.business {
 }
 
 .business .box ul.items li:hover strong {
+    margin-top: 40px;
     color: White;
-    -webkit-transition-delay: .4s;
-    -moz-transition-delay: .4s;
-    -ms-transition-delay: .4s;
-    -o-transition-delay: .4s;
-    transition-delay: .4s
+    -webkit-transition: all .3s ease-in-out .5s;
+    -moz-transition: all .3s ease-in-out .5s;
+    -ms-transition: all .3s ease-in-out .5s;
+    -o-transition: all .3s ease-in-out .5s;
+    transition: all .3s ease-in-out .5s
 }
 
 .business .box ul.items li:hover p {
-    top: 20px;
+    top: 10px;
     -webkit-transition: all .3s ease-in-out .5s;
     -moz-transition: all .3s ease-in-out .5s;
     -ms-transition: all .3s ease-in-out .5s;
@@ -2857,10 +2892,8 @@ section.contact {
         font-size: 24px
     }
     .video .swiper-container .nth3 .box .mid {
-        width: 216px;
-        height: 40px;
         margin-top: 10px;
-        background: url(../Images/words_mini.png) no-repeat 0px -131px
+        font-size: 20px;
     }
     .video .swiper-container .nth3 .box .bottom {
         font-size: 12px;
@@ -2890,6 +2923,12 @@ section.contact {
         height: 38px;
         background: url(../Images/words_mini.png) no-repeat 0px -88px
     }
+
+    .video .swiper-container .nth4 .box .mid {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
     .video .swiper-container .nth4 .box .bottom {
         font-size: 12px;
         font-family: "宋体";
