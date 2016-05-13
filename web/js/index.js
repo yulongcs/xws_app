@@ -258,7 +258,7 @@ function pageLoad() {
             else lock = true;
             pageSwitching();
             $("header .menu").trigger("mouseleave");
-            $(".dock").css("top", ($(window).height() - $(".dock").height()) / 2 + 35)
+           // $(".dock").css("top", ($(window).height() - $(".dock").height()) / 2 + 35)
         })
     });
     dockEvent();
@@ -443,7 +443,7 @@ function pageSwitching() {
     $("header .menu").trigger("mouseleave")
 }
 function dockEvent() {
-    $(".dock").height($(".dock ul.icons li").length * 50 + $(".dock a.switch").height() + 20).css("top", ($(window).height() - $(".dock").height()) / 2 + 35);
+   // $(".dock").height($(".dock ul.icons li").length * 50 + $(".dock a.switch").height() + 20).css("top", ($(window).height() - $(".dock").height()) / 2 + 35);
     $(".dock ul.icons li i").bind("mouseover click touchstart",
     function() {
         $(".dock ul.icons li").removeClass("active");

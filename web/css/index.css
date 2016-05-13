@@ -168,7 +168,7 @@ header.fixed .logo {
 header .words {
     display: block;
     position: fixed;
-    top: 40px;
+    top: 48px;
     left: 350px;
     letter-spacing: 1px;
     font-weight: normal;
@@ -272,12 +272,13 @@ header.fixed .hotline span {
 header .hotline u {
     position: fixed;
     top: 35px;
-    right: 230px;
+    right: 220px;
     display: block;
-    width: 30px;
-    height: 30px;
+    font-size: 28px;
+    color: #FED149;
+    opacity: 0.8;
     text-decoration: none;
-    background: url(../Images/icons.png) no-repeat;
+    /*background: url(../Images/icons.png) no-repeat;*/
     -webkit-transition: all .2s ease-in-out 0s;
     -moz-transition: all .2s ease-in-out 0s;
     -ms-transition: all .2s ease-in-out 0s;
@@ -315,8 +316,8 @@ header .menu-icon a {
 
 header .menu-icon span {
     margin-left: 15px;
-    -moz-opacity: 0.5;
-    opacity: 0.5;
+    -moz-opacity: 0.8;
+    opacity: 0.8;
     cursor: pointer;
     -webkit-transition: all .3s ease-in-out 0s;
     -moz-transition: all .3s ease-in-out 0s;
@@ -2391,9 +2392,11 @@ section.contact {
     position: fixed;
     right: 0px;
     width: 50px;
+    height: 300px;
     -moz-opacity: 0.7;
     opacity: 0.7;
-    z-index: 200
+    z-index: 200;
+    bottom: 10px;
 }
 
 .dock.close {
@@ -2561,15 +2564,19 @@ section.contact {
     background-position: -32px -640px
 }
 
-@media (max-width:1300px) {
-    header .logo {
-        top: 24px;
-        left: 35px;
-        width: 240px
-    }
+@media (max-width: 1560px) {
     header .words {
         display: none
     }
+}
+
+@media (max-width:1300px) {
+    header .logo {
+        top: 28px;
+        left: 35px;
+        width: 210px
+    }
+    
     header nav.menu {
         margin-left: -40px
     }
@@ -2586,7 +2593,7 @@ section.contact {
         right: 170px
     }
     header .hotline u {
-        right: 215px
+        right: 208px
     }
     header.fixed .hotline u {
         right: 180px
@@ -2596,7 +2603,8 @@ section.contact {
 @media (max-width:1080px) {
     header .words {
         display: block;
-        left: 220px
+        left: 280px;
+        top: 42px;
     }
     header .hotline {
         right: 285px
@@ -2605,7 +2613,7 @@ section.contact {
         right: 255px
     }
     header .hotline u {
-        right: 300px
+        right: 290px
     }
     header.fixed .hotline u {
         right: 265px
@@ -2624,7 +2632,7 @@ section.contact {
         border-top: 1px solid #FED149;
         border-right: none;
         background: #3a3a3a;
-        z-index: 100
+        z-index: 98;
     }
     header.fixed nav.menu {
         top: 22px;
@@ -2654,19 +2662,29 @@ section.contact {
     }
 }
 
+@media (max-width: 780px) {
+    header .words {
+        display: none
+    }
+}
+
 @media (max-width:720px) {
     header {
         height: 54px
     }
     header .logo,
     header.fixed .logo {
-        top: 17px;
+        top: 15px;
         left: 20px;
-        width: 120px
+        width: 180px
     }
+    
     header .words {
-        display: none
+       display: block;
+        left: 200px;
+        top: 28px;
     }
+
     header .menu-icon,
     header.fixed .menu-icon {
         top: 18px;
@@ -2695,11 +2713,14 @@ section.contact {
     }
     header .hotline u,
     header.fixed .hotline u {
-        top: 24px;
-        right: 223px;
-        width: 15px;
-        height: 21px;
-        background: url(../Images/icons.png) no-repeat 0px -34px
+        top: 20px;
+        right: 220px; 
+    }
+}
+
+@media (max-width: 610px) {
+     header .words {
+       display: none;
     }
 }
 
@@ -2712,7 +2733,8 @@ section.contact {
     }
     header .logo,
     header.fixed .logo {
-        width: 80px
+        width: 180px;
+        top: 10px;
     }
     header .menu-icon,
     header.fixed .menu-icon {
@@ -4669,12 +4691,12 @@ section.contact {
     }
 }
 
-@media (max-width:700px),
+/*@media (max-width:700px),
 (max-height:600px) {
     .dock {
         display: none
     }
-}
+}*/
 
 @media (max-width:319px),
 (max-height:210px) {
