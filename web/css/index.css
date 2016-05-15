@@ -902,33 +902,37 @@ section.business {
     display: block;
     position: relative;
     margin: 0 auto;
-    margin-top: 43px;
-    height: 69px
+    margin-top: 5px;
+    width: 145px;
+    height: 145px;
+    background-size: cover;
+    background-repeat: no-repeat;;
 }
 
-.business .box ul.items li.pc i {
-    width: 69px;
-    background: url(../Images/words.png) no-repeat -245px -357px
+.business .box ul.items li.latindance i {
+   background-image: url(../Images/latindance.png);
 }
 
-.business .box ul.items li.mobi i {
-    width: 64px;
-    background: url(../Images/words.png) no-repeat -416px -291px
+.business .box ul.items li.jazzdance i {
+
+    background-image: url(../Images/jazzdance.png);
 }
 
-.business .box ul.items li.sys i {
-    width: 76px;
-    background: url(../Images/words.png) no-repeat -415px -362px
+.business .box ul.items li.latindance_kids i {
+
+    background-image: url(../Images/latindance_kids.png);
 }
 
-.business .box ul.items li.app i {
-    width: 74px;
-    background: url(../Images/words.png) no-repeat -244px -439px
+.business .box ul.items li.breaking_kids i {
+    background-image: url(../Images/breaking_kids.png) ;
 }
 
-.business .box ul.items li.host i {
-    width: 79px;
-    background: url(../Images/words.png) no-repeat -420px -439px
+.business .box ul.items li.dance_kids i {
+    background-image: url(../Images/dance_kids.png);
+}
+
+.business .box ul.items li.folkdance_kids i {
+    background-image: url(../Images/folkdance_kids.png);
 }
 
 .business .box ul.items li u {
@@ -937,7 +941,7 @@ section.business {
     width: 156px;
     height: 156px;
     margin-left: 22px;
-    background: url(../Images/words.png) no-repeat 0px -363px;
+    background: url(../Images/shaoer-bg2.png) no-repeat;
     -webkit-transition: all .5s ease-in-out 0s;
     -moz-transition: all .5s ease-in-out 0s;
     -ms-transition: all .5s ease-in-out 0s;
@@ -1001,24 +1005,24 @@ section.business {
     transition: all .5s ease-in-out .4s
 }
 
-.business .box ul.items li.pc:hover i {
-    background: url(../Images/words.png) no-repeat -168px -357px
+.business .box ul.items li.latindance:hover i {
+    /*background: url(../Images/words.png) no-repeat -168px -357px*/
 }
 
-.business .box ul.items li.mobi:hover i {
-    background: url(../Images/words.png) no-repeat -337px -291px
+.business .box ul.items li.jazzdance:hover i {
+    /*background: url(../Images/words.png) no-repeat -337px -291px*/
 }
 
-.business .box ul.items li.sys:hover i {
-    background: url(../Images/words.png) no-repeat -327px -362px
+.business .box ul.items li.latindance_kids:hover i {
+    /*background: url(../Images/words.png) no-repeat -327px -362px*/
 }
 
-.business .box ul.items li.app:hover i {
-    background: url(../Images/words.png) no-repeat -164px -439px
+.business .box ul.items li.breaking_kids:hover i {
+    /*background: url(../Images/words.png) no-repeat -164px -439px*/
 }
 
-.business .box ul.items li.host:hover i {
-    background: url(../Images/words.png) no-repeat -335px -439px
+.business .box ul.items li.dance_kids:hover i {
+    /*background: url(../Images/words.png) no-repeat -335px -439px*/
 }
 
 .business .box ul.items li:hover u.cl {
@@ -1447,7 +1451,7 @@ section.clients {
     top: 0px
 }
 
-.clients .box ul.items li.apple {
+.clients .box ul.items li.breaking_kidsle {
     top: 450px;
     background: url(../Images/clients.png) no-repeat -1150px 0px;
     -webkit-transition: all .8s ease-in-out 0s;
@@ -1457,11 +1461,11 @@ section.clients {
     transition: all .8s ease-in-out 0s
 }
 
-.clients .box ul.items li.apple.active {
+.clients .box ul.items li.breaking_kidsle.active {
     background: url(../Images/clients.png) no-repeat -1150px -150px
 }
 
-.clients.active .box ul.items li.apple {
+.clients.active .box ul.items li.breaking_kidsle {
     top: 0px
 }
 
@@ -1776,7 +1780,7 @@ section.quality {
     overflow: hidden
 }
 
-.quality .box .swiper-slide ul li.mobi {
+.quality .box .swiper-slide ul li.jazzdance {
     width: 14px;
     height: 27px;
     background: url(../Images/icons.png) no-repeat 0px -264px
@@ -1788,7 +1792,7 @@ section.quality {
     background: url(../Images/icons.png) no-repeat -71px -264px
 }
 
-.quality .box .swiper-slide ul li.pc {
+.quality .box .swiper-slide ul li.latindance {
     width: 35px;
     height: 27px;
     background: url(../Images/icons.png) no-repeat 0px -303px
@@ -3246,27 +3250,27 @@ section.contact {
     .business .box ul.items li i {
         margin-top: 0px
     }
-    .business .box ul.items li.pc i {
+    .business .box ul.items li.latindance i {
         width: 46px;
         height: 35px;
         background: url(../Images/words_mini.png) no-repeat -145px -217px
     }
-    .business .box ul.items li.mobi i {
+    .business .box ul.items li.jazzdance i {
         width: 46px;
         height: 39px;
         background: url(../Images/words_mini.png) no-repeat -245px -176px
     }
-    .business .box ul.items li.sys i {
+    .business .box ul.items li.latindance_kids i {
         width: 46px;
         height: 35px;
         background: url(../Images/words_mini.png) no-repeat -249px -220px
     }
-    .business .box ul.items li.app i {
+    .business .box ul.items li.breaking_kids i {
         width: 46px;
         height: 41px;
         background: url(../Images/words_mini.png) no-repeat -146px -264px
     }
-    .business .box ul.items li.host i {
+    .business .box ul.items li.dance_kids i {
         width: 47px;
         height: 38px;
         background: url(../Images/words_mini.png) no-repeat -253px -266px
@@ -3277,19 +3281,19 @@ section.contact {
     .business .box ul.items li strong {
         margin-left: 15px
     }
-    .business .box ul.items li.pc:hover i {
+    .business .box ul.items li.latindance:hover i {
         background: url(../Images/words_mini.png) no-repeat -100px -217px
     }
-    .business .box ul.items li.mobi:hover i {
+    .business .box ul.items li.jazzdance:hover i {
         background: url(../Images/words_mini.png) no-repeat -201px -176px
     }
-    .business .box ul.items li.sys:hover i {
+    .business .box ul.items li.latindance_kids:hover i {
         background: url(../Images/words_mini.png) no-repeat -196px -220px
     }
-    .business .box ul.items li.app:hover i {
+    .business .box ul.items li.breaking_kids:hover i {
         background: url(../Images/words_mini.png) no-repeat -100px -264px
     }
-    .business .box ul.items li.host:hover i {
+    .business .box ul.items li.dance_kids:hover i {
         background: url(../Images/words_mini.png) no-repeat -201px -266px
     }
 }
