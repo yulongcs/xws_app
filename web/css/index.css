@@ -96,20 +96,6 @@ div.welcome p u {
     touch-action:pan-x
 }
 
-.swiper-container {}
-
-.swiper-slide {}
-
-.swiper-slide-active {}
-
-.swiper-slide-visible {}
-
-.swiper-pagination-switch {}
-
-.swiper-active-switch {}
-
-.swiper-visible-switch {}
-
 html {
     overflow: hidden
 }
@@ -161,7 +147,7 @@ header .logo img{
 }
 
 header.fixed .logo {
-    width: 120px;
+    width: 180px;
     top: 16px
 }
 
@@ -291,7 +277,9 @@ header .hotline u {
 
 header.fixed .hotline u {
     top: 20px;
-    right: 195px
+    right: 195px;
+    font-size: 12px;
+    top: 15px;
 }
 
 header .hotline a {
@@ -886,7 +874,7 @@ section.business {
 
 .business .box ul.items li {
     width: 200px;
-    height: 300px;
+    height: 320px;
     margin: 0 8px;
     /*background: url(../Images/bg_green.png) no-repeat 0px 400px;*/
    
@@ -967,7 +955,7 @@ section.business {
 
 .business .box ul.items li strong {
     display: block;
-    margin-top: 70px;
+    margin-top: 20px;
     font-size: 16px;
     font-weight: normal;
     text-align: center;
@@ -1034,7 +1022,7 @@ section.business {
 }
 
 .business .box ul.items li:hover strong {
-    margin-top: 40px;
+    margin-top: 20px;
     color: White;
     -webkit-transition: all .3s ease-in-out .5s;
     -moz-transition: all .3s ease-in-out .5s;
@@ -1055,10 +1043,11 @@ section.business {
 .business .box label {
     display: block;
     margin: 0 auto;
-    margin-top: -40px;
+    margin-top: 40px;
     width: 297px;
     height: 21px;
-    background: url(../Images/words.png) no-repeat 0px -333px
+    text-align: center;
+    color: #423F41;
 }
 
 section.cases {

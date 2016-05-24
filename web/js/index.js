@@ -138,7 +138,6 @@ function pageLoad() {
         autoPlay: true,
         vis: 1
     });
-    $(".business .box").append("<label></label>");
     $(".business ul.items li").prepend('<u class="cl"></u><u class="cr"></u>');
     $(".cases .swiper-container").after('<a class="prev" href="javascript:;"></a><div class="swiper-container mini">' + $(".cases .swiper-container").html() + '</div><a class="next" href="javascript:;"></a>').after('<div class="swiper-container xs">' + $(".cases .swiper-container").html() + '</div>');
     $(".cases .xs .swiper-slide img").addClass("img-responsive");
