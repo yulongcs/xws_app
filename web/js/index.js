@@ -309,7 +309,7 @@ function initLayout() {
         }
     });
     var items = $(".business ul.items li");
-    if ($(window).width() > 1000) {
+    if ($(window).width() > 1100) {
         var itemMarginLeft = items.css("margin-left").replace("px", "");
         var width = items.outerWidth() * items.size() + itemMarginLeft * 2 * items.size() + 4 * (items.size() - 1) + 2;
         $(".business ul.items").width(width)

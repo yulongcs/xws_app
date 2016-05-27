@@ -3082,6 +3082,24 @@ section.contact {
     }
 }
 
+@media (max-width:1372px) {
+    .business .box ul.items li {
+        width: 170px;
+        height: 270px;
+        margin: 0px
+    }
+    .business .box ul.items li u {
+        margin-left: 7px;
+    }
+    .business .box ul.items li:hover {
+        -webkit-transition-delay: 0s;
+        -moz-transition-delay: 0s;
+        -ms-transition-delay: 0s;
+        -o-transition-delay: 0s;
+        transition-delay: 0s
+    }
+}
+
 @media (min-height:1201px) {
     .business .box {
         margin-top: -70px
